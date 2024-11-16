@@ -52,6 +52,10 @@ p {
     font-weight: lighter;
     cursor: pointer;
 }
+.button:hover {
+    background-color: #7875FE;
+    color: #FFFFFF;
+}
 
 body {
     background: #EBEBEB;
@@ -77,19 +81,68 @@ body {
     padding-right: 296px;
     cursor: pointer;
 }
+
+.hamburger {
+    position: relative;
+    display: none;
+    vertical-align: middle;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: white;
+}
+.btn_hamb {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #4C5866;
+    cursor: pointer;
+}
+.btn_hamb div {
+    width: 100%;
+    height: 100%;
+}
+.btn_hamb::before, .btn_hamb::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: #4C5866;
+}
+.btn_hamb::before {
+    top: -8px;
+}
+.btn_hamb::after {
+    top: 8px;
+}
+
 .menu_list {
     display: flex;
     gap: 60px;
     padding-right: 60px;
 }
+
 .menu_text {
     font-size: 20px;
     color: #4C5866;
     white-space: nowrap;
 }
+.menu_text:hover {
+    color: #7875FE;
+}
+
 .user_actions {
     display: flex;
     gap: 30px;
+}
+
+.user_actions_button {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
 }
 .title_bg {
     height: 620px;
@@ -210,6 +263,9 @@ body {
 }
 .catalog_list_text_p {
     margin-bottom: 20px;
+    max-width: 255px;
+    min-height: 155px;
+    line-height: 170%;
 }
 .catalog_list_text_info {
     display: flex;
@@ -221,6 +277,12 @@ body {
 .catalog_list_text_a {
     color: #7875FE;
 } 
+.catalog_list_text_a:hover {
+    color: #4946B4;
+}
+.catalog_list_text_arow {
+    color: #4946B4;
+}
 
 .partner {
     padding: 123px 0 85px 0;
@@ -469,7 +531,7 @@ body {
         row-gap: 40px;
     }
     .catalog_list_items {
-        width: 240px;
+        max-width: 240px;
     }
     .catalog_list_img {
         width: 240px;
@@ -505,6 +567,121 @@ body {
         height: 50px;
     }
     .container {
-        max-width: 320px;
+        max-width: 290px;
+    }
+    .top_bg {
+        height: 105px;
+    }
+    .top{
+        flex-wrap: wrap-reverse;
+        padding: 11px 0 15px 0;
+    }
+    .logo{
+        order: 1;
+        margin: 0 auto;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+    .menu {
+        display: none;
+    }
+
+    .title_bg {
+        height: 328px;
+    }
+    .title {
+        padding: 49px 0 49px 0;
+    }
+    .title_text {
+        width: 289px;
+        gap: 15px;
+        padding: 0;
+    }
+    .title_text_simple {
+        margin-bottom: 6px;
+    }
+    .title_img {
+        display: none;
+    }
+    .present_list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .present_list_item {
+        align-items: center;
+    }
+    .present_list_item_content {
+        flex-direction: row;
+    }
+    .present_span {
+        width: 290px;
+    }
+    .present_img {
+        width: 130px;
+        height: 96px;
+    }
+    .present_main {
+        margin: 60px 0 0 0;
+    }
+    .present_main_text {
+        max-width: 290px;
+    }
+    .present_main_img {
+        width: 290px;
+        height: 223px;
+    }
+    .catalog_list {
+        row-gap: 60px;
+        column-gap: 0;
+    }
+    .catalog_list_items {
+        max-width: 290px;
+    }
+    .catalog_list_img {
+        width: 290px;
+        height: 180px;
+    }
+    .catalog_list_text_p {
+        margin-bottom: 30px;
+    }
+    .partner_img {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .partner_img::-webkit-scrollbar {
+        width: 0;
+    }
+    .partner_img_i {
+        width: 150px;
+        height: 80px;
+    }
+
+    .sketchbook_img {
+        width: 290px;
+        height: 221px;
+        text-align: center;
+    }
+
+    .footer_inner {
+        height: 127px;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .logo {
+        order: 1;
+    }
+    .footer_spaan {
+        order: 2;
+    }
+    .footer_span {
+        display: block;
+        width: 290px;
+        height: 1px;
+        background: #DDDDDD;
+    }
+    .socials {
+        order: 3;
     }
 }

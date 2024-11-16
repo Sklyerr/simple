@@ -6,6 +6,8 @@
     <title>Simple</title>
 
     <link rel="stylesheet" href="./css/main.css">
+
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     
@@ -32,16 +34,21 @@
                             </li>
                         </ul>
                     </nav>
+                    <button class="hamburger">
+                        <div class="btn_hamb">
+                            <div></div>
+                        </div>
+                    </button>
                     <ul class="user_actions">
                         <li class="user_actions_items">
-                            <a href="#" class="user_actions_link">
+                            <button class="user_actions_button">
                                 <img src="img/Search.svg" alt="Search">
-                            </a>
+                            </button>
                         </li>
                         <li class="user_actions_items">
-                            <a href="#" class="user_actions_link">
+                            <button class="user_actions_button">
                                 <img src="img/log_in.svg" alt="Login">
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -53,7 +60,7 @@
                     <div class="title_text">
                         <h1 class="title_text_h1">Простые вещи.<br> Из бумаги</h1>
                         <p class="title_text_simple">Бума́га (предположительно от итал. bombagia, первоисточником же считается иранский) — волокнистый материал с минеральными добавками. </p>
-                        <button class="button">
+                        <button class="button" id="catalog_btn">
                             Каталог
                         </button>
                     </div>
@@ -115,7 +122,7 @@
             </div>
         </section>
         
-        <section class="catalog">
+        <section class="catalog" id="catalog">
             <div class="catalog_bg">
                 <div class="container">
                     <ul class="catalog_list">
@@ -203,6 +210,9 @@
                 <div class="footer_inner">
                     <div class="logo">
                         <img src="img/logo_w.svg" alt="Logo">
+                    </div>
+                    <div class="footer_spaan">
+                        <span class="footer_span"></span>
                     </div>
                     <ul class="socials">
                         <li class="socials_items">

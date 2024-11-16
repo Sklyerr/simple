@@ -1,4 +1,0 @@
-aiogram
-wikipedia
-pydantic-settings
-pydantic
